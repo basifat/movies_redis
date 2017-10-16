@@ -10,7 +10,6 @@ CACHE_TTL = getattr(settings, 'CACHE_TTL', DEFAULT_TIMEOUT)
 @cache_page(CACHE_TTL)
 def titles_view(request):
     title2 = get_titles()
-    print "title is", title2
     return render(request, 'titles/movie_title.html', {
         'titles': get_titles()
     })
