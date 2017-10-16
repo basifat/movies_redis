@@ -6,5 +6,8 @@ from .models import Titles
 
 # Register your models here.
 
-class TitleInline(admin.TabularInline):
-    model = Titles
+class TitleAdmin(admin.ModelAdmin):
+    #model = Titles
+    pass
+
+admin.site.register(Titles, TitleAdmin)

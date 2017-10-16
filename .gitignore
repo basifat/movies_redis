@@ -1,1 +1,5 @@
-# See https://help.github.com/ignore-files/ for more about ignoring files.
+# Python compiled byte code
+*.pyc
+
+# SQLite3 database
+*.sqlite3

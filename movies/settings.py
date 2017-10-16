@@ -49,7 +49,7 @@ LOCAL_APPS = [
     'titles',
 ]
 
-INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+INSTALLED_APPS = DEFAULT_APPS + THIRD_PARTY_APPS + LOCAL_APPS 
 
 MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
@@ -121,7 +121,7 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = True
+USE_I18N = False
 
 USE_L10N = True
 
@@ -143,3 +143,5 @@ CACHES = {
         "KEY_PREFIX": "titles"
     }
 }
+
+INTERNAL_IPS = ['127.0.0.1']
